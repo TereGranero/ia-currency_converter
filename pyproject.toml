@@ -1,0 +1,24 @@
+[project]
+name = "ia-currency-converter"
+version = "0.1.0"
+description = "Currency converter using IA Agents"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "crewai-tools[mcp] (>=0.73.1,<0.74.0)",
+    "mcp-server (>=0.1.4,<0.2.0)",
+    "mcp (>=1.14.1,<2.0.0)"
+
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.packages]]
+include ="ia_currency_converter"
